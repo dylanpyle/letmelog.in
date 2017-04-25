@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='The easiest way to connect to a new WiFi network'>
+    <link rel='icon' href='favicon.png' type='image/png'>
+
+    <title>Let Me Log In</title>
+
+    <style>
+      body {
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      body, h1, p, a {
+        font-family: Helvetica, Arial, sans-serif;
+        color: #222;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+      a {
+        background: rgba(255, 255, 255, 0.6);
+        padding: 5px;
+        text-decoration: none;
+      }
+      a:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+      h1 {
+        font-size: 40px;
+        margin: 0 0 20px 0;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      footer {
+        background: #333;
+        color: #ddd;
+        padding: 30px;
+        font-size: 12px;
+      }
+      footer a {
+        color: #ddd;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .hero-section {
+        background: #6193fa;
+      }
+        .hero-content {
+          padding: 60px 20px;
+          max-width: 400px;
+        }
+        .hero-button {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 20px;
+        }
+      .explain-section {
+        background: #a8c7e5;
+      }
+        .explain-content {
+          text-align: left;
+          padding: 60px 20px;
+          max-width: 600px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <section class='hero-section'>
+      <div class='hero-content'>
+        <h1>You're all set!</h1>
+        <p>
+          If you're reading this, you've successfully connected to the internet.
+        </p>
+        <a href='#what' class='hero-button'>What's this?</a>
+      </div>
+    </section>
+
+    <section class='explain-section' id='what'>
+      <div class='explain-content'>
+        <p>
+          When you connect to a new network, often you have to log in first.
+          Unfortunately your web browser doesn't always realize this and shows
+          you an error instead, because many sites make sure that you're
+          connecting directly and securely to the place you typed into your
+          address bar.
+        </p>
+        <p>
+          By typing <a href='http://letmelog.in'>letmelog.in</a> into your
+          browser, you'll almost always be sent directly to the login page you're
+          looking for instead. We pledge never to use HTTPS or HSTS — these are
+          the technologies that confuse your browser when you try to browse
+          normally.
+        </p>
+        <p>
+          Read more about
+          <a href='https://en.wikipedia.org/wiki/Captive_portal'>captive portals</a> and
+          <a href='https://en.wikipedia.org/wiki/HTTPS'>HTTPS</a>
+          on Wikipedia.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Made with ♡ by <a href='https://dylanpyle.com'>Dylan</a>.
+      View the source on <a href='https://github.com/dylanpyle/letmelog.in'>GitHub</a>.
+    </footer>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51559319-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
